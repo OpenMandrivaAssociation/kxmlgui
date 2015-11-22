@@ -52,7 +52,6 @@ Development files (Headers etc.) for %{name}.
 %files -f %{name}%{major}.lang
 %{_sysconfdir}/xdg/ui
 %{_libdir}/libexec/kf5/ksendbugmail
-%{_datadir}/kf5/kxmlgui
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}
