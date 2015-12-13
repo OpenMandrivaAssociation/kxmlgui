@@ -17,6 +17,7 @@ BuildRequires: pkgconfig(Qt5Test)
 BuildRequires: cmake(KF5GlobalAccel)
 BuildRequires: cmake(KF5TextWidgets)
 BuildRequires: cmake(ECM)
+BuildRequires: cmake(KF5TextWidgets)
 Requires: %{libname} = %{EVRD}
 
 %description
