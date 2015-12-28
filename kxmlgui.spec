@@ -14,10 +14,23 @@ License: GPL
 Group: System/Libraries
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Test)
+BuildRequires: pkgconfig(Qt5Widgets)
+BuildRequires: pkgconfig(Qt5DBus)
+BuildRequires: pkgconfig(Qt5Xml)
+BuildRequires: pkgconfig(Qt5Network)
+BuildRequires: pkgconfig(Qt5PrintSupport)
+BuildRequires: cmake(ECM)
+BuildRequires: cmake(KF5Attica)
 BuildRequires: cmake(KF5GlobalAccel)
 BuildRequires: cmake(KF5TextWidgets)
-BuildRequires: cmake(ECM)
-BuildRequires: cmake(KF5TextWidgets)
+BuildRequires: cmake(KF5CoreAddons)
+BuildRequires: cmake(KF5ItemViews)
+BuildRequires: cmake(KF5Config)
+BuildRequires: cmake(KF5ConfigWidgets)
+BuildRequires: cmake(KF5I18n)
+BuildRequires: cmake(KF5IconThemes)
+BuildRequires: cmake(KF5WidgetsAddons)
+BuildRequires: cmake(KF5WindowSystem)
 Requires: %{libname} = %{EVRD}
 
 %description
