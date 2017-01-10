@@ -1,4 +1,2 @@
-removed_sources:
-  kxmlgui-5.13.0.tar.xz: 119c8884f52926dd874f0160690ee3a366a6493a
 sources:
-  kxmlgui-5.30.0.tar.xz: 85e34bfcd4acb229ffd8729ae113c057b8ff7b8e
+  kxmlgui-5.30.0.tar.xz: 0a886d69c095be3d99c61c6c5acee61b9c137607
