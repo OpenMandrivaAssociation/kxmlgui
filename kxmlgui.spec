@@ -29,6 +29,7 @@ BuildRequires: cmake(KF5Config)
 BuildRequires: cmake(KF5ConfigWidgets)
 BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5IconThemes)
+BuildRequires: cmake(KF5Sonnet)
 BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: cmake(KF5WindowSystem)
 Requires: %{libname} = %{EVRD}
