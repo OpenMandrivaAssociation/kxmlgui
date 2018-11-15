@@ -5,8 +5,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: kxmlgui
-Version:	5.51.0
-Release:	2
+Version:	5.52.0
+Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: The KDE Frameworks 5 XML GUI library
 URL: http://kde.org/
@@ -66,6 +66,7 @@ Development files (Headers etc.) for %{name}.
 
 %files -f %{name}%{major}.lang
 %{_sysconfdir}/xdg/ui
+%{_sysconfdir}/xdg/*.categories
 %{_libdir}/libexec/kf5/ksendbugmail
 
 %files -n %{libname}
