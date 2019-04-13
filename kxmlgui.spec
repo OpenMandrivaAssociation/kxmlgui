@@ -34,6 +34,7 @@ BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: cmake(KF5WindowSystem)
 # For QCH format docs
 BuildRequires: qt5-assistant
+BuildRequires: doxygen
 Requires: %{libname} = %{EVRD}
 
 %description
