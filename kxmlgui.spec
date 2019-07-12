@@ -5,7 +5,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: kxmlgui
-Version:	5.59.0
+Version:	5.60.0
 Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: The KDE Frameworks 5 XML GUI library
@@ -77,7 +77,7 @@ Developer documentation for %{name} for use with Qt Assistant
 
 %files -f %{name}%{major}.lang
 %{_sysconfdir}/xdg/ui
-%{_sysconfdir}/xdg/*.categories
+%{_datadir}/qlogging-categories5/*.categories
 %{_libdir}/libexec/kf5/ksendbugmail
 
 %files -n %{libname}
