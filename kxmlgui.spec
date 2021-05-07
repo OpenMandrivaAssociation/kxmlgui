@@ -1,12 +1,11 @@
 %define major 5
 %define libname %mklibname KF5XmlGui %{major}
 %define devname %mklibname KF5XmlGui -d
-%define debug_package %{nil}
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: kxmlgui
-Version:	5.81.0
-Release:	2
+Version:	5.82.0
+Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: The KDE Frameworks 5 XML GUI library
 URL: http://kde.org/
