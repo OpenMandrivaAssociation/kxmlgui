@@ -5,7 +5,7 @@
 
 Name: kxmlgui
 Version:	5.109.0
-Release:	1
+Release:	2
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: The KDE Frameworks 5 XML GUI library
 URL: http://kde.org/
@@ -36,7 +36,7 @@ BuildRequires: cmake(KF5WindowSystem)
 BuildRequires: qt5-assistant
 BuildRequires: doxygen
 Requires: %{libname} = %{EVRD}
-Requires: kxmlgui-default-settings
+Obsoletes: kxmlgui-default-settings < 5.240.0-0.20230818.1
 
 %description
 The KDE Frameworks 5 XML GUI library.
@@ -85,13 +85,12 @@ Qt Designer plugin for handling %{name} widgets
 
 %install
 %ninja_install -C build
-# We get this from KF6 now
-rm -rf %{buildroot}%{_sysconfdir}/xdg
 %find_lang %{name}%{major}
 
 %files -f %{name}%{major}.lang
 %{_datadir}/qlogging-categories5/*.*categories
 %{_libdir}/libexec/kf5/ksendbugmail
+%{_sysconfdir}/xdg/ui
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}
